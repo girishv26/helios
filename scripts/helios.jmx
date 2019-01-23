@@ -53,15 +53,15 @@
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">${__P(Users,1)}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <longProp name="ThreadGroup.start_time">1500544367000</longProp>
-        <longProp name="ThreadGroup.end_time">1500544367000</longProp>
+        <longProp name="ThreadGroup.start_time">1548221463000</longProp>
+        <longProp name="ThreadGroup.end_time">1548221463000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">${__P(Duration,10)}</stringProp>
         <stringProp name="ThreadGroup.delay">0</stringProp>
       </ThreadGroup>
       <hashTree>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="HomePage" enabled="true">
-          <stringProp name="IfController.condition">&quot;${__P(HomePage)}&quot; == &quot;true&quot;</stringProp>
+          <stringProp name="IfController.condition">&quot;${__p(HomePage)}&quot; == &quot;true&quot;</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
         </IfController>
         <hashTree>
@@ -100,7 +100,6 @@
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="RangePage" enabled="true">
           <stringProp name="IfController.condition">&quot;${__P(RangePage)}&quot; == &quot;true&quot;</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
-          <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
         <hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="RangePage" enabled="true">
@@ -138,7 +137,6 @@
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="MicraModel" enabled="true">
           <stringProp name="IfController.condition">&quot;${__P(MicraModel)}&quot; == &quot;true&quot;</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
-          <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
         <hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="MicraModel" enabled="true">
@@ -176,7 +174,6 @@
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="PulsarModel" enabled="true">
           <stringProp name="IfController.condition">&quot;${__P(PulsarModel)}&quot; == &quot;true&quot;</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
-          <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
         <hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="PulsarModel" enabled="true">
@@ -214,7 +211,6 @@
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="EditorialPage" enabled="true">
           <stringProp name="IfController.condition">&quot;${__P(EditorialPage)}&quot; == &quot;true&quot;</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
-          <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
         <hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="EditorialPage" enabled="true">
